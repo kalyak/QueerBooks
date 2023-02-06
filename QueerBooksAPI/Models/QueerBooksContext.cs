@@ -1,11 +1,15 @@
-﻿using System;
-namespace QueerBooksAPI.Models
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace QueerBooksAPI.Models;
+
+public class QueerBooksContext : DbContext
 {
-	public class QueerBooksContext
-	{
-		public QueerBooksContext()
-		{
-		}
-	}
+    public QueerBooksContext(DbContextOptions<QueerBooksContext> options) : base(options)
+    {
+    }
+
+    public DbSet<Book> Books { get; set; } = null!;
+    public DbSet<Author> Authors { get; set; } = null!;
 }
+
 
