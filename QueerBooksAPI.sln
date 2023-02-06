@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueerBooksAPI", "QueerBooksAPI\QueerBooksAPI.csproj", "{4D27241D-8EF3-4A62-A61B-DBE70E8712F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D27241D-8EF3-4A62-A61B-DBE70E8712F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D27241D-8EF3-4A62-A61B-DBE70E8712F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D27241D-8EF3-4A62-A61B-DBE70E8712F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D27241D-8EF3-4A62-A61B-DBE70E8712F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {878A093E-31D3-433D-836E-B8332F5CBE1B}
+	EndGlobalSection
+EndGlobal
