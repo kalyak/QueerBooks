@@ -54,7 +54,7 @@ namespace QueerBooksAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAuthor(long id, Author author)
         {
-            if (id != author.Id)
+            if (id != author.AuthorId)
             {
                 return BadRequest();
             }
@@ -92,7 +92,7 @@ namespace QueerBooksAPI.Controllers
             _context.Authors.Add(author);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAuthor", new { id = author.Id }, author);
+            return CreatedAtAction("GetAuthor", new { id = author.AuthorId }, author);
         }
 
         // DELETE: api/Authors/5
@@ -117,7 +117,7 @@ namespace QueerBooksAPI.Controllers
 
         private bool AuthorExists(long id)
         {
-            return (_context.Authors?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Authors?.Any(e => e.AuthorId == id)).GetValueOrDefault();
         }
     }
 }

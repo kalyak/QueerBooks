@@ -7,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<QueerBooksContext>(opt =>
-    opt.UseInMemoryDatabase("QueerBooks"));
+        opt.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase")));
+//builder.Services.AddDbContext<QueerBooksContext>(opt =>
+//    opt.UseInMemoryDatabase("QueerBooks"));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

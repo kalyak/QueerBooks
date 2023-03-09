@@ -2,11 +2,11 @@
 
 namespace QueerBooksAPI.Models;
 
-public class Book
+public class Book : BaseEntity
 {
-    public long Id { get; set; }
+    public long BookId { get; set; }
     public string Title { get; set; }
-    public List<Author> Author { get; set; }
+    public ICollection<Author> Author { get; set; }
     public string Blurb { get; set; }
 }
 
